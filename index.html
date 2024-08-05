@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix Website Clone</title>
   <link rel="stylesheet" href="netflix.css">
+  <meta http-equiv="content-security-policy" content="default-src 'self'; img-src 'self' https:;style-src 'self' https:;">
 </head>
 <body>
-  <section id=" HOME"></section>
+  <section id=" home"></section>
   <div class="header">
     <nav>
-      <img src="images/logo.png" class="logo">
+      <img src="images/logo.png" class="logo" alt="netflix logo">
       <div>
         <button class="language-btn">English
-          <img src="images/down-icon.png">
+          <img src="images/down-icon.png" alt="drop down icon">
         </button>
         <button>Sign in</button>
       </div>
@@ -22,7 +23,7 @@
       <h1>Unlimited movies,TV shows and more.</h1>
       <h3>Watch anywhere. Cancel anytime.</h3>
       <p>Ready to watch? Enter your email to create or restart your membership.</p>
-      <form class="email-signup">
+      <form class="email-signup" action="your_server_endpoint" method="post">
         <input type="email" placeholder="Email address" required>
         <button type="submit">Get Started</button>
       </form>
